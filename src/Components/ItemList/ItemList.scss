@@ -1,0 +1,22 @@
+$tiny: 400px;
+$small: 600px;
+$medium: 800px;
+$large: 1000px;
+$giant: 1200px;
+$massive: 1400px;
+
+.items-list-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+@media (max-width: $tiny) {
+  .items-list-container {
+    border: 5px solid red;
+    grid-template-columns: 1fr;
+  }
+}
