@@ -29,7 +29,7 @@ const ItemCard = ({ item }) => {
       <div>
         <h4>{item.shortDescription}</h4>
         <p>
-          <b>Price:</b> ${item.price}
+          <b>Price:</b> ${item.price.toFixed(2)}
         </p>
       </div>
       <div>{renderToppings()}</div>

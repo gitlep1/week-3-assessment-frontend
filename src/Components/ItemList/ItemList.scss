@@ -6,12 +6,20 @@ $giant: 1200px;
 $massive: 1400px;
 
 .items-list-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-  justify-content: center;
-  align-items: center;
-  overflow-y: auto;
+  .items-list-searchbar {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+
+  .items-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+  }
 }
 
 @media (max-width: $tiny) {
