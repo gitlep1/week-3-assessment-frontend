@@ -23,7 +23,7 @@ The Menu App is a simple React web application that displays a menu of items. Us
 - Add items to favorites to keep track of preferred choices.
 - Switch between dark and light mode to customize the app's appearance.
 
-## Technologies Used {#technologies-used}
+## Technologies Used
 
 <a name="technologies-used" />
 
@@ -33,13 +33,13 @@ The Menu App is a simple React web application that displays a menu of items. Us
 - React-Bootstrap: A front-end framework for responsive web design components.
 - Cookies: To store user preferences for dark and light mode.
 
-## Getting Started {#getting-started}
+## Getting Started
 
 <a name="getting-started" />
 
 To run the app locally on your machine, follow the instructions below.
 
-### Installation {#installation}
+### Installation
 
 <a name="installation" />
 
