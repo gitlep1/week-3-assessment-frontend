@@ -9,7 +9,9 @@
 - [Installation](#installation)
 - [Usage](#usage)
 
-## Introduction {#introduction}
+## Introduction
+
+<a name="introduction" />
 
 The Menu App is a simple React web application that displays a menu of items. Users can browse through the menu, favorite items they like, and switch between dark and light mode for better visual comfort.
 
