@@ -1,26 +1,22 @@
 import "./ItemList.scss";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { nanoid } from "nanoid";
 import { Form } from "react-bootstrap";
 
 import ItemCard from "../ItemCard/ItemCard";
 
 const Items = ({ items }) => {
-  let itemsCopy = [...items];
-
   const [search, setSearch] = useState("");
 
-  if (search === "") {
-    itemsCopy = items;
-  } else {
-    const filteredItems = items.filter((item) => {
-      if (item.name.toLowerCase().includes(search.toLowerCase())) {
-        return item;
-      }
-      return null;
-    });
-    itemsCopy = filteredItems;
-  }
+  const filteredItems = useMemo(() => {
+    if (search === "") {
+      return items;
+    } else {
+      return items.filter((item) =>
+        item.name.toLowerCase().includes(search.toLowerCase())
+      );
+    }
+  }, [items, search]);
 
   return (
     <section className="items-list-container">
@@ -36,7 +32,7 @@ const Items = ({ items }) => {
       </Form>
 
       <div className="items-list">
-        {itemsCopy.map((item) => (
+        {filteredItems.map((item) => (
           <ItemCard key={nanoid()} item={item} />
         ))}
       </div>

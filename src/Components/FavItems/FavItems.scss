@@ -1,26 +1,51 @@
+$tiny: 400px;
 $small: 600px;
 $medium: 800px;
 $large: 1000px;
 
-.items-list-container {
-  .items-list-searchbar {
+.fav-items-container {
+  .noFavs {
+    grid-column: 1 / -1;
+  }
+
+  .fav-items-searchbar {
     width: 70%;
     margin: 0 auto;
     margin-bottom: 1em;
   }
 
-  .items-list {
+  .favorites-list {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
     justify-content: center;
     align-items: center;
+
+    .fav-item-card {
+      border: 3px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      border-radius: 1em;
+      margin: 0 auto;
+      box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+      .fav-item-card-img {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .remove-button {
+        margin: 3%;
+      }
+    }
   }
 }
 
 @media (min-width: $small) {
-  .items-list-container {
-    .items-list {
+  .fav-items-container {
+    .favorites-list {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1em;
@@ -31,8 +56,8 @@ $large: 1000px;
 }
 
 @media (min-width: $medium) {
-  .items-list-container {
-    .items-list {
+  .fav-items-container {
+    .favorites-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1em;
@@ -43,8 +68,8 @@ $large: 1000px;
 }
 
 @media (min-width: $large) {
-  .items-list-container {
-    .items-list {
+  .fav-items-container {
+    .favorites-list {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1em;

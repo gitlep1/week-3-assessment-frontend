@@ -1,0 +1,19 @@
+@use "../../app" as *;
+
+.dark-navbar-container {
+  @include darkmode-navbar;
+  margin-bottom: 1.5em;
+}
+
+.light-navbar-container {
+  @include lightmode-navbar;
+  margin-bottom: 1.5em;
+}
+
+#switchModes {
+  display: inline-block;
+  position: absolute;
+  width: 75px;
+  right: 0;
+  top: 0;
+}

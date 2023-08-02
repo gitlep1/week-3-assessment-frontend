@@ -1,7 +1,33 @@
-.App {
-  text-align: center;
+@mixin darkmode-app {
   color: white;
   background-color: #282e33;
+  transition: 1.3s;
+}
+
+@mixin lightmode-app {
+  color: black;
+  background-color: #c9d1d7;
+  transition: 1.3s;
+}
+
+@mixin darkmode-navbar {
+  background-color: rgb(53, 53, 53);
+}
+
+@mixin lightmode-navbar {
+  background-color: rgb(99, 99, 99);
+}
+
+.dark-app {
+  @include darkmode-app;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.light-app {
+  @include lightmode-app;
+  text-align: center;
   height: 100vh;
   width: 100vw;
 }
