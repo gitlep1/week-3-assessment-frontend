@@ -1,9 +1,6 @@
-$tiny: 400px;
 $small: 600px;
 $medium: 800px;
 $large: 1000px;
-$giant: 1200px;
-$massive: 1400px;
 
 .item-card {
   border: 3px solid black;
@@ -25,13 +22,6 @@ $massive: 1400px;
 
   .item-card-img {
     width: 90%;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: $tiny) {
-  .item-card {
-    width: 15em;
     margin: 0 auto;
   }
 }

@@ -7,6 +7,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  animation: switchBackgroundColor infinite 10s;
+  @keyframes switchBackgroundColor {
+    0% {
+      background-color: #282e33;
+    }
+    50% {
+      background-color: #c9d1d7;
+    }
+    100% {
+      background-color: #282e33;
+    }
+  }
 }
 
 code {
