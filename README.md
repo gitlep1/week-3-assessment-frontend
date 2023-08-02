@@ -48,7 +48,7 @@ To run the app locally on your machine, follow the instructions below.
 
 ```
 git clone git@github.com:gitlep1/week-3-assessment-frontend.git
-cd week3-assessment
+cd week-3-assessment-frontend
 ```
 
 3. Install the required dependencies.
