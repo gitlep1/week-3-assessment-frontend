@@ -15,13 +15,17 @@
 
 The Menu App is a simple React web application that displays a menu of items. Users can browse through the menu, favorite items they like, and switch between dark and light mode for better visual comfort.
 
-## Features {#features}
+## Features
+
+<a name="features" />
 
 - View a list of menu items with details like name, image, description, and price.
 - Add items to favorites to keep track of preferred choices.
 - Switch between dark and light mode to customize the app's appearance.
 
 ## Technologies Used {#technologies-used}
+
+<a name="technologies-used" />
 
 - React.js: A JavaScript library for building user interfaces.
 - JavaScript: The programming language used for app functionality.
@@ -31,9 +35,13 @@ The Menu App is a simple React web application that displays a menu of items. Us
 
 ## Getting Started {#getting-started}
 
+<a name="getting-started" />
+
 To run the app locally on your machine, follow the instructions below.
 
 ### Installation {#installation}
+
+<a name="installation" />
 
 1. Clone the repository to your local machine.
 2. Navigate to the project folder.
@@ -49,7 +57,9 @@ cd week3-assessment
 npm install
 ```
 
-### Usage {#usage}
+### Usage
+
+<a name="usage" />
 
 To start the development server and run the app, use the following command:
 
